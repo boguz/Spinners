@@ -1,0 +1,74 @@
+<xmp>
+   .mult3 {
+      height: 40px;
+      width: 40px;
+      position: relative;
+   } 
+     
+   .mult3circle1, .mult3circle2 {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+   }
+      
+   .mult3circle1 {
+      background-color: #66CC99;
+      -webkit-animation: mult3circle1anim 4s infinite steps(1);
+      animation: mult3circle1anim 4s infinite steps(1);
+   }
+      
+   @-webkit-keyframes mult3circle1anim {
+      0%, 75%, 100% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+      50% {
+         -webkit-transform: scale(1.4);
+         transform: scale(1.4);
+      }
+   }  
+    
+   @keyframes mult3circle1anim {
+      0%, 75%, 100% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+      50% {
+         -webkit-transform: scale(1.4);
+         transform: scale(1.4);
+      }
+   } 
+     
+   .mult3circle2 {
+      background-color: #438866;
+      -webkit-animation: mult3circle2anim 4s infinite steps(1);
+      animation: mult3circle2anim 4s infinite steps(1);
+   }
+      
+   @-webkit-keyframes mult3circle2anim {
+      0%, 100% {
+         -webkit-transform: scale(.65);
+         transform: scale(.65);
+      }
+      25% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+   }  
+    
+   @keyframes mult3circle2anim {
+      0%, 100% {
+         -webkit-transform: scale(.65);
+         transform: scale(.65);
+      }
+      25% {
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+   }
+</xmp>
