@@ -1,0 +1,670 @@
+/******************************************************************************************
+***************                        GENERAL STYLES                       ***************
+*******************************************************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Raleway";
+	font-weight: 200;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+section::after {
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.spinContainer {
+	width: 630px; /* 600px + 5px margin on each side of each spinContainer*/
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.spinWindow {
+	background-color: rgba(255,255,255,.95);
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin: 5px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+}
+.spinWindow:hover,
+.spinWindow:focus,
+.spinWindow:active {
+	cursor: pointer;
+}
+
+.sectionTitle {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	opacity: .75;
+}
+.spinName {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -40px;
+	padding: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(255,255,255,.75);
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+section.single .spinName {
+	background-color: #61ad87;
+}
+section.multiple .spinName {
+	background-color: #a25846;
+}
+.spinWindow:hover .spinName {
+	-webkit-transform: translateY(-40px);
+	transform: translateY(-40px);
+}
+
+
+
+
+/******************************************************************************************
+***************                         SECTION HERO                        ***************
+*******************************************************************************************/
+
+section.hero {
+	height: 100vh;
+	width: 100vw;
+	background-color: #8E6A5E;
+	border: 2vw solid white;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.logo {
+	height: 25vh;
+}
+.intro {
+	width: 600px;
+	margin: 60px auto;
+	line-height: 2em;
+	color: white;
+}
+
+a.button {
+	border: 1px solid rgba(255,255,255,.5);
+	padding: 10px 20px;
+	margin: 0 20px;
+	border-radius: 2px;
+	color: white;
+	font-size: 11px;
+	text-transform: uppercase;
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+a.button:hover,
+a.button:focus,
+a.button:active {
+	background-color: rgba(255,255,255,.8);
+	color: #8E6A5E;
+}
+
+
+
+
+
+/******************************************************************************************
+***************                        SECTION SINGLE                       ***************
+*******************************************************************************************/
+
+.single {
+	padding: 100px 0;
+	background-color: #7FC6A1;
+}
+.single .sectionTitle {
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+
+
+/******************************************************************************************
+***************                        SECTION MULTIPLE                     ***************
+*******************************************************************************************/
+
+.multiple {
+	padding: 100px 0;
+	background-color: #c36d58;
+}
+.multiple .sectionTitle {
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+
+
+
+
+/******************************************************************************************
+***************                       SECTION CONTRIBUTE                    ***************
+*******************************************************************************************/
+
+.contribute {
+	width: 100vw;
+	height: 35vw;
+	overflow: hidden;
+}
+.contributeLeft, .contributeRight {
+	width: 50vw;
+	height: 35vw;
+	background-color: #c9d8d8;
+	float: left;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+.contributeRight {
+	background-color: #e7efef;
+}
+.heart {
+	width: 20vw;
+	height: auto;
+	overflow: visible;
+}
+.heart .heartShape {
+	fill: none;
+	-webkit-transform: scale(.65);
+	transform: scale(.65);
+	stroke-width: 15;
+	stroke-dasharray: 760;
+	-webkit-animation: heartanim 4s infinite ease-in-out;
+	animation: heartanim 4s infinite ease-in-out;
+	-webkit-animation-delay: 2s;
+	animation-delay: 2s;
+}
+
+@-webkit-keyframes heartanim {
+	0%, 40%, 100% {
+		stroke-dashoffset: 0;
+	}
+	20% {
+		stroke-dashoffset: 760;
+	}
+}
+
+@keyframes heartanim {
+	0%, 40%, 100% {
+		stroke-dashoffset: 0;
+	}
+	20% {
+		stroke-dashoffset: 760;
+	}
+}
+
+.contributeQuestion {
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #E26A6A;
+	margin-bottom: 40px;
+}
+
+.contributeText {
+	width: 60%;
+	line-height: 1.6em;
+	color: #525f5f;
+	margin-bottom: 40px;
+}
+
+.contribute a.button {
+	border-color: #E26A6A;
+	color: #E26A6A;
+	font-size: 14px;
+}
+.contribute a.button:hover,
+.contribute a.button:active,
+.contribute a.button:focus {
+	background-color: #E26A6A;
+	color: #e7efef;
+}
+
+
+
+
+
+
+/******************************************************************************************
+***************                       SECTION HOW TO USE                    ***************
+*******************************************************************************************/
+
+
+section.howtouse {
+	padding: 100px 0;
+	background-color: #52696D;
+}
+
+.howtouse .sectionTitle {
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.instructionColumns {
+	width: 700px;
+	margin: 0 auto 50px;
+	overflow: hidden;
+	color: white;
+}
+
+.col1, .col2, .col3 {
+	float: left;
+	width: 28%;
+	margin: 0 4%;
+}
+.col1 {	margin-left: 0; }
+
+.col3 {	margin-right: 0; }
+
+.colTitle {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+}
+.colimg {
+	height: 80px;
+	width: 80px;
+	text-align: center;
+	margin: 25px auto;
+}
+.col1_outside,
+.col1_middle,
+.col1_center,
+.brackets,
+.dash,
+.littleHeart{
+	fill: rgba(255,255,255,.25);
+}
+.colDesc {
+	font-size: 14px;
+	line-height: 1.6em;
+}
+
+.col1_outside {
+	-webkit-animation: col1outsideanim 8s infinite linear;
+	animation: col1outsideanim 8s infinite linear;
+}
+@-webkit-keyframes col1outsideanim {
+	0%, 90%, 100% {
+		opacity: 0;
+	}
+	2%, 85% {
+		opacity: 1;
+	}
+}
+
+.col1_middle {
+	-webkit-animation: col1middleanim 8s infinite linear;
+	animation: col1middleanim 8s infinite linear;
+}
+@-webkit-keyframes col1middleanim {
+	0%, 4%, 90%, 100% {
+		opacity: 0;
+	}
+	6%, 85% {
+		opacity: 1;
+	}
+}
+
+.col1_center {
+	-webkit-animation: col1centeranim 8s infinite linear;
+	animation: col1centeranim 8s infinite linear;
+}
+@-webkit-keyframes col1centeranim {
+	0%, 8%, 90%, 100% {
+		opacity: 0;
+	}
+	10%, 85% {
+		opacity: 1;
+	}
+}
+
+
+
+
+.dash {
+	-webkit-animation: dashanimation 1.5s infinite steps(1);
+	animation: dashanimation 1.5s infinite steps(1);
+}
+@-webkit-keyframes dashanimation {
+	0%, 100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+@keyframes dashanimation {
+	0%, 100% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 1;
+	}
+}
+
+
+
+
+.littleHeart {
+	-webkit-animation: littlHeartAnim 10s infinite linear;
+	animation: littlHeartAnim 10s infinite linear;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+}
+@-webkit-keyframes littlHeartAnim {
+	0%, 4%, 8%, 100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	2%, 6% {
+		-webkit-transform: scale(.8);
+		transform: scale(.8)
+	}
+}
+
+@keyframes littlHeartAnim {
+	0%, 4%, 8%, 100% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+	2%, 6% {
+		-webkit-transform: scale(.8);
+		transform: scale(.8)
+	}
+}
+
+
+.howtouse a.button:hover,
+.howtouse a.button:focus,
+.howtouse a.button:active {
+	color: #52696D;
+}
+
+
+
+
+
+/******************************************************************************************
+***************                           SECTION SHARE                     ***************
+*******************************************************************************************/
+
+section.share {
+	padding: 100px 0;
+	background-color: #8E6A5E;
+	border: 2vw solid white;
+}
+
+section.share h2.sectionTitle {
+	color: white;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.socialMediaSvg {
+	height: 75px;
+	margin: 0 12.5px;
+}
+
+.socialMediaSvg {
+	fill: rgba(255,255,255,.25);
+	-webkit-transition: all .5s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+.socialMediaSvg:hover,
+.socialMediaSvg:active,
+.socialMediaSvg:focus {
+	fill: rgba(255,255,255,.5);
+}
+
+
+
+
+
+/******************************************************************************************
+***************                           SECTION ANATIS                    ***************
+*******************************************************************************************/
+
+section.anatis {
+	padding: 0;
+}
+.anatis {
+	background-color: #565b5e;
+	height: 30px;
+	text-align: center;
+}
+.anatis p {
+	text-transform: uppercase;
+	font-size: 80%;
+	color: #dddbd4;
+	padding-top: 5px;
+}
+.anatisHeart {
+	height: 14px;
+	margin: 0px 4px;
+	opacity: .2;
+	position: relative;
+	top: 2px;
+	fill: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************************
+***************                           MODAL WINDOW                      ***************
+*******************************************************************************************/
+
+
+.modal {
+	position: fixed;
+	left: 0vw;
+	right: 0vw;
+	top: 0vh;
+	bottom: 0vh;
+	background-color: rgba(0,0,0,.85);
+	z-index: 100;
+	-webkit-transform: translateY(-200vh);
+	transform: translateY(-200vh);
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.modal.active{
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+
+.insidemodal {
+	max-height: 75vh;
+	width: 40vw;
+	background-color: white;
+	overflow: scroll;
+
+}
+
+.insidemodaltitle {
+	padding: 10px;
+}
+.htmltitle {
+	background-color: #F2784B;
+}
+
+.csstitle {
+	background-color: #52B3D9;
+}
+
+xmp {
+	text-align: left;
+	font-family: "Inconsolata";
+	opacity: .5;
+	padding-bottom: 20px;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
