@@ -10,7 +10,9 @@
 	box-sizing: border-box;
 	text-align: center;
 }
-
+body, html {
+	min-width: 360px;
+}  
 a {
 	text-decoration: none;
 }
@@ -82,7 +84,20 @@ section.multiple .spinName {
 	transform: translateY(-40px);
 }
 
-
+@media only screen and (max-width: 650px) {
+	.spinContainer {
+		width: 420px;
+	}	
+}
+@media only screen and (max-width: 440px) {
+	.spinContainer {
+		width: 100vw;
+	}
+	.spinWindow {
+		width: 90vw;
+		margin: 1vh 5vw;
+	}
+}
 
 
 /******************************************************************************************
@@ -142,7 +157,25 @@ a.button:active {
 	color: #8E6A5E;
 }
 
+@media only screen and (max-width: 750px) {
+	.intro {
+		width: 80vw;
+		line-height: 1.6em
+	}
+}
 
+@media only screen and (max-width: 600px) {
+	.logo {
+		height: 15vh;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	a.button {
+		display: block;
+		margin: 10px 0;
+	}
+}
 
 
 
@@ -277,7 +310,29 @@ a.button:active {
 	color: #e7efef;
 }
 
+@media only screen and (max-width: 850px) {
+	.contribute {
+		height: 640px;
+	}
+	.contributeLeft, .contributeRight {
+		width: 100vw;
+		height: 320px;
+	}
+	.heart {
+		width: 200px;
+	}
+}
 
+@media only screen and (max-width: 406px) {
+	.contributeQuestion {
+		margin-bottom: 20px;
+	}
+	.contributeText {
+		width: 80%;
+		line-height: 1.5em;
+		margin-bottom: 20px;
+	}
+}
 
 
 
@@ -325,6 +380,23 @@ section.howtouse {
 	text-align: center;
 	margin: 25px auto;
 }
+
+@media only screen and (max-width: 720px) {
+	.instructionColumns {
+		width: 100vw;
+	}
+	.col1, .col2, .col3 {
+		width: 100vw;
+		margin: 25px auto;
+		padding: 0 20px;
+	}
+	.colimg {
+		height: 60px;
+		width: 60px;
+		margin: 15px auto;
+	}
+}
+
 .col1_outside,
 .col1_middle,
 .col1_center,
@@ -377,9 +449,6 @@ section.howtouse {
 	}
 }
 
-
-
-
 .dash {
 	-webkit-animation: dashanimation 1.5s infinite steps(1);
 	animation: dashanimation 1.5s infinite steps(1);
@@ -400,8 +469,6 @@ section.howtouse {
 		opacity: 1;
 	}
 }
-
-
 
 
 .littleHeart {
@@ -462,9 +529,6 @@ section.share h2.sectionTitle {
 .socialMediaSvg {
 	height: 75px;
 	margin: 0 12.5px;
-}
-
-.socialMediaSvg {
 	fill: rgba(255,255,255,.25);
 	-webkit-transition: all .5s ease-in-out;
 	-webkit-transition: all .25s ease-in-out;
@@ -476,7 +540,19 @@ section.share h2.sectionTitle {
 	fill: rgba(255,255,255,.5);
 }
 
+@media only screen and (max-width: 720px) {
+	.socialMediaSvg {
+		height: 60px;
+		margin: 0 7px;
+	}
+}
 
+@media only screen and (max-width: 420px) {
+	.socialMediaSvg {
+		display: block;
+		margin: 20px auto 0;
+	}
+}
 
 
 
@@ -506,26 +582,6 @@ section.anatis {
 	top: 2px;
 	fill: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
