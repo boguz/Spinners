@@ -36,9 +36,11 @@
 		<link rel="stylesheet" href="styles/spinners.css">
 		<link rel="stylesheet" href="styles/spinnerAnimations.css">
 
+
 		<!-- jQuery -->
 		<script src="scripts/jquery-2.1.3.min.js"></script>
 		<script src="scripts/spinners.js"></script>
+
 
 		<!-- Fonts -->
 		<link href="http://fonts.googleapis.com/css?family=Raleway:200i,400,200" rel="stylesheet" type="text/css">
@@ -50,16 +52,18 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		
 
 		<!-- Specify the URI of your favicon in href attribute -->
 		<link rel="shortcut icon" href="./images/favicon.png">
+		
 		
 		<!-- Google Analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-															})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 			ga('create', 'UA-84160849-1', 'auto');
 			ga('send', 'pageview');
@@ -70,7 +74,7 @@
 	
 	<body>
 	
-			
+	<!-- HERO SECTION -->
 	<section class="hero">
 		
 		<img src="./images/spinner_logo.png" alt="spinner logo" class="logo">
@@ -85,7 +89,7 @@
 	</section> <!-- end section.hero -->
 		
 	
-	<!-- SINGLE -->
+	<!-- SINGLE SECTION -->
 	<section class="single">
 		
 		<h2 class="sectionTitle">Single Element Spinners</h2>
@@ -148,55 +152,51 @@
 	</section> <!-- end section.single -->
 	
 	
-	<!-- MULTIPLE -->
-		<section class="multiple">
-
-			<h2 class="sectionTitle">Multiple Element Spinners</h2>
-
-			<div class="spinContainer">
-
-				<!-- multiple 1 -->
-				<a href="#" class="spinWindow" data-filename="multiple1">
-
-					<div class="multiple1">
-						<div class="ball1"></div>
-						<div class="ball2"></div>
-						<div class="ball3"></div>
-					</div>
-					<div class="spinName">3 Balls</div>				
-				</a> <!-- end .spinWindow .multiple1 -->
-								
-				<!-- multiple 2 -->
-				<a href="#" class="spinWindow" data-filename="multiple2">
+	<!-- MULTIPLE SECTION -->
+	<section class="multiple">
+	
+		<h2 class="sectionTitle">Multiple Element Spinners</h2>
+		
+		<div class="spinContainer">
+		
+			<!-- multiple 1 -->
+			<a href="#" class="spinWindow" data-filename="multiple1">
+				<div class="multiple1">
+					<div class="ball1"></div>
+					<div class="ball2"></div>
+					<div class="ball3"></div>
+				</div>
+				<div class="spinName">3 Balls</div>				
+			</a> <!-- end .spinWindow .multiple1 -->
+							
+			<!-- multiple 2 -->
+			<a href="#" class="spinWindow" data-filename="multiple2">
+			
+				<div class="mult2rect mult2rect1"></div>
+				<div class="mult2rect mult2rect2"></div>
+				<div class="mult2rect mult2rect3"></div>
+				<div class="mult2rect mult2rect4"></div>
+				<div class="mult2rect mult2rect5"></div>
+				<div class="spinName">Rectangles</div>				
+			</a> <!-- end .spinWindow multiple2 -->
+			
+			<!-- multiple 3 -->
+			<a href="#" class="spinWindow" data-filename="multiple3">
+			
+				<div class="mult3">
+					<div class="mult3circle1"></div>
+					<div class="mult3circle2"></div>
+				</div>
 				
-					<div class="mult2rect mult2rect1"></div>
-					<div class="mult2rect mult2rect2"></div>
-					<div class="mult2rect mult2rect3"></div>
-					<div class="mult2rect mult2rect4"></div>
-					<div class="mult2rect mult2rect5"></div>
-
-					<div class="spinName">Rectangles</div>				
-
-				</a> <!-- end .spinWindow multiple2 -->
-				
-				<!-- multiple 3 -->
-				<a href="#" class="spinWindow" data-filename="multiple3">
-				
-					<div class="mult3">
-						<div class="mult3circle1"></div>
-						<div class="mult3circle2"></div>
-					</div>
+				<div class="spinName">Concentric</div>					
+			</a> <!-- end .spinWindow multiple3 -->
+							
+		</div> <!-- end .spinContainer -->
 					
-					<div class="spinName">Concentric</div>				
-					
-				</a> <!-- end .spinWindow multiple3 -->
-								
-			</div> <!-- end .spinContainer -->
-						
-		</section> <!-- end section.multiple -->
+	</section> <!-- end section.multiple -->
 		
 	
-	<!-- CONTRIBUTE -->
+	<!-- CONTRIBUTE SECTION -->
 	<section class="contribute">
 		
 		<div class="contributeLeft">
@@ -217,7 +217,7 @@
 	</section> <!-- end section.contribute -->
 	
 	
-	<!-- HOW TO USE -->
+	<!-- HOW TO USE SECTION -->
 	<section class="howtouse" id="howtouse">
 		
 		<h2 class="sectionTitle">How to use</h2>
@@ -267,6 +267,7 @@
 	</section> <!-- end section-howtouse -->
 	
 	
+	<!-- SHARE SECTION -->
 	<section class="share">
 	
 		<h2 class="sectionTitle">Share with your friends</h2>
@@ -322,20 +323,20 @@
 			
 	</section> <!-- end section.share -->
 	
-			
-		<section class="anatis">
-			<div class="footer" id="anatis">
-				<a href="mailto: anatiswebdesign@gmail.com" class="anatis-link"><p>made with
-					<svg class="anatisHeart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 51.05">
-						<title>heart</title>
-						<path class="cls-1" d="M44.23,0A15.77,15.77,0,0,0,30,9,15.78,15.78,0,0,0,0,15.77C0,33.09,30,51,30,51s30-18,30-35.27A15.77,15.77,0,0,0,44.23,0Z"/>
-					</svg>
-				 by anatisdesign</p></a>
-			</div> <!-- end .footer -->
-		</section> <!-- end .anatis -->
+	<!-- SECTION ANATIS -->		
+	<section class="anatis">
+		<div class="footer" id="anatis">
+			<a href="mailto: anatiswebdesign@gmail.com" class="anatis-link"><p>made with
+				<svg class="anatisHeart" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 51.05">
+					<title>heart</title>
+					<path class="cls-1" d="M44.23,0A15.77,15.77,0,0,0,30,9,15.78,15.78,0,0,0,0,15.77C0,33.09,30,51,30,51s30-18,30-35.27A15.77,15.77,0,0,0,44.23,0Z"/>
+				</svg>
+			 by anatisdesign</p></a>
+		</div> <!-- end .footer -->
+	</section> <!-- end .anatis -->
 		
 	
-	<!-- MODAL -->
+	<!-- MODAL WINDOW -->
 		<div class="modal">
 			<div class="insidemodal">
 				<h4 class="insidemodaltitle htmltitle">HTML</h4>
