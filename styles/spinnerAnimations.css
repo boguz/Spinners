@@ -331,6 +331,180 @@
 
 
 /******************************************************************************************
+***************                           SINGLE 6                          ***************
+*******************************************************************************************/
+
+.single7 {
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	-webkit-animation: single7 4s infinite linear;
+	animation: single7 4s infinite linear;
+}
+
+@-webkit-keyframes single7 {
+	0%, 20%, 100% {
+		-webkit-transform: translate(-15px, 150px);
+		transform: translate(-15px, -15px);
+		background-color: #F5D76E;
+	}
+	25%, 45% {
+		-webkit-transform: translate(15px, -15px);
+		transform: translate(15px, -15px);
+		background-color: #4183D7;
+	}
+	50%, 70% {
+		-webkit-transform: translate(15px, 15px);
+		transform: translate(15px, 15px);
+		background-color: #D64541;
+	}
+	75%, 95% {
+		-webkit-transform: translate(-15px, 15px);
+		transform: translate(-15px, 15px);
+		background-color: #26A65B;
+	}
+}
+
+@keyframes single7 {
+	0%, 20%, 100% {
+		-webkit-transform: translate(-15px, 150px);
+		transform: translate(-15px, -15px);
+		background-color: #F5D76E;
+	}
+	25%, 45% {
+		-webkit-transform: translate(15px, -15px);
+		transform: translate(15px, -15px);
+		background-color: #4183D7;
+	}
+	50%, 70% {
+		-webkit-transform: translate(15px, 15px);
+		transform: translate(15px, 15px);
+		background-color: #D64541;
+	}
+	75%, 95% {
+		-webkit-transform: translate(-15px, 15px);
+		transform: translate(-15px, 15px);
+		background-color: #26A65B;
+	}
+}
+
+
+/******************************************************************************************
+***************                           SINGLE 8                          ***************
+*******************************************************************************************/
+
+.single8 {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 10px solid red;
+	-webkit-animation: single8 8s infinite linear;
+	animation: single8 8s infinite linear;
+}
+
+@-webkit-keyframes single8 {
+	0%, 100%{
+		border: solid 20px #68C3A3;
+	}
+	6.25% {
+		border: solid 2px #68C3A3;
+	}
+	12.5% {
+		border: solid 2px #52B3D9;
+	}
+	18.75% {
+		border: solid 20px #52B3D9;
+	}
+	25% {
+		border: solid 20px #52B3D9;
+	}
+	31.25% {
+		border: solid 2px #52B3D9;
+	}
+	37.5% {
+		border: solid 2px #F4D03F;
+	}
+	43.75% {
+		border: solid 20px #F4D03F;
+	}
+	50% {
+		border: solid 20px #F4D03F;
+	}
+	56.25% {
+		border: solid 2px #F4D03F;
+	}
+	62.5% {
+		border: solid 2px #D24D57;
+	}
+	68.75% {
+		border: solid 20px #D24D57;
+	}
+	75% {
+		border: solid 20px #D24D57;
+	}
+	81.25% {
+		border: solid 2px #D24D57;
+	}
+	87.5% {
+		border: solid 2px #68C3A3;
+	}
+	93.75% {
+		border: solid 20px #68C3A3;
+	}
+}
+
+@keyframes single8 {
+	0%, 100%{
+		border: solid 20px #68C3A3;
+	}
+	6.25% {
+		border: solid 2px #68C3A3;
+	}
+	12.5% {
+		border: solid 2px #52B3D9;
+	}
+	18.75% {
+		border: solid 20px #52B3D9;
+	}
+	25% {
+		border: solid 20px #52B3D9;
+	}
+	31.25% {
+		border: solid 2px #52B3D9;
+	}
+	37.5% {
+		border: solid 2px #F4D03F;
+	}
+	43.75% {
+		border: solid 20px #F4D03F;
+	}
+	50% {
+		border: solid 20px #F4D03F;
+	}
+	56.25% {
+		border: solid 2px #F4D03F;
+	}
+	62.5% {
+		border: solid 2px #D24D57;
+	}
+	68.75% {
+		border: solid 20px #D24D57;
+	}
+	75% {
+		border: solid 20px #D24D57;
+	}
+	81.25% {
+		border: solid 2px #D24D57;
+	}
+	87.5% {
+		border: solid 2px #68C3A3;
+	}
+	93.75% {
+		border: solid 20px #68C3A3;
+	}
+}
+
+/******************************************************************************************
 ***************                           MULTIPLE 1                        ***************
 *******************************************************************************************/
 
@@ -702,5 +876,111 @@
 	25% {
 		-webkit-transform: scale(1);
 		transform: scale(1);
+	}
+}
+
+
+/******************************************************************************************
+***************                          MULTIPLE 4                         ***************
+*******************************************************************************************/
+
+.mul4 {
+	height: 40px;
+	width: 40px;
+	background-color: pink;
+}
+.mul4stripe {
+	height: 10px;
+	width: 40px;
+}
+.mul4stripe1 {
+	-webkit-animation: mul4stripe1 3s infinite ease-in-out;
+	animation: mul4stripe1 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes mul4stripe1{
+	0%, 60%, 100% {
+		background-color: indianred;
+	}
+	10%, 50% {
+		background-color: skyblue;
+	}
+}
+
+@keyframes mul4stripe1{
+	0%, 60%, 100% {
+		background-color: indianred;
+	}
+	10%, 50% {
+		background-color: skyblue;
+	}
+}
+
+.mul4stripe2 {
+	-webkit-animation: mul4stripe2 3s infinite ease-in-out;
+	animation: mul4stripe2 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes mul4stripe2{
+	0%, 10%, 70%, 100% {
+		background-color: indianred;
+	}
+	20%, 60% {
+		background-color: skyblue;
+	}
+}
+
+@keyframes mul4stripe2{
+	0%, 10%, 70%, 100% {
+		background-color: indianred;
+	}
+	20%, 60% {
+		background-color: skyblue;
+	}
+}
+
+.mul4stripe3 {
+	-webkit-animation: mul4stripe3 3s infinite ease-in-out;
+	animation: mul4stripe3 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes mul4stripe3{
+	0%, 20%, 80%, 100% {
+		background-color: indianred;
+	}
+	30%, 70% {
+		background-color: skyblue;
+	}
+}
+
+@keyframes mul4stripe3{
+	0%, 20%, 80%, 100% {
+		background-color: indianred;
+	}
+	30%, 70% {
+		background-color: skyblue;
+	}
+}
+
+.mul4stripe4 {
+	-webkit-animation: mul4stripe4 3s infinite ease-in-out;
+	animation: mul4stripe4 3s infinite ease-in-out;
+}
+
+@-webkit-keyframes mul4stripe4{
+	0%, 30%, 90%, 100% {
+		background-color: indianred;
+	}
+	40%, 80% {
+		background-color: skyblue;
+	}
+}
+
+@keyframes mul4stripe4{
+	0%, 30%, 90%, 100% {
+		background-color: indianred;
+	}
+	40%, 80% {
+		background-color: skyblue;
 	}
 }
