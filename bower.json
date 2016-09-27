@@ -1,0 +1,26 @@
+{
+  "name": "cssspinners",
+  "version": "0.0.1",
+  "authors": [
+    "buguz <your.email@your.mailserver.org>"
+  ],
+  "description": "css spinners made easy",
+  "main": "scripts/spinners.js",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "spinner",
+    "loading",
+    "css loading spinner"
+  ],
+  "license": "MIT",
+  "homepage": "https://boguz.github.io/Spinners",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
