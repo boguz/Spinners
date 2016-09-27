@@ -2,7 +2,7 @@
   "name": "cssspinners",
   "version": "0.0.1",
   "authors": [
-    "buguz <your.email@your.mailserver.org>"
+    "boguz <luis_bento@hotmail.com>"
   ],
   "description": "css spinners made easy",
   "main": "scripts/spinners.js",
