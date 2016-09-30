@@ -1,0 +1,41 @@
+<xmp>
+   .single9 {
+      height: 6px;
+      width: 75px;
+      background-color: #d8d7d7;
+      position: relative;
+   }
+      
+   .single9:before {
+      content: '';
+      height: 6px;
+      width: 10px;
+      position: absolute;
+      left: 0;
+      background-color: #EC644B;
+      -webkit-animation: single9anim 4s infinite ease-in-out;
+      animation: single9anim 4s infinite ease-in-out;
+   }
+      
+   @-webkit-keyframes single9anim {
+      0%, 100% {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+      }
+      50% {
+         -webkit-transform: translateX(65px);
+         transform: translateX(65px);
+      }
+   }
+      
+   @keyframes single9anim {
+      0%, 100% {
+         -webkit-transform: translateX(0);
+         transform: translateX(0);
+      }
+      50% {
+         -webkit-transform: translateX(65px);
+         transform: translateX(65px);
+      }
+   }
+</xmp>

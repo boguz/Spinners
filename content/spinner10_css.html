@@ -1,0 +1,29 @@
+<xmp>
+   .single10 {
+      height: 50px;
+      width: 50px;
+      border: 8px solid #A2DED0;
+      border-radius: 50%;
+      position: relative;
+      -webkit-animation: single10anim 2s infinite linear;
+      animation: single10anim 2s infinite linear;
+   }  
+    
+   .single10:before {
+      content: '';
+      height: 6px;
+      width: 6px;
+      border-radius: 50%;
+      background-color: #16A085;
+      position: absolute;
+      top: -7px;
+      left: 14px;
+   }
+      
+   @-webkit-keyframes single10anim {
+      100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+   }   
+   @keyframes single10anim {
+      100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+   }
+</xmp>
