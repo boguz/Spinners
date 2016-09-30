@@ -1,0 +1,74 @@
+<xmp>
+   /******************************
+   *                             *
+   *   BROWSER COMPATIBILITY     *
+   *                             *
+   *   Chrome: 41+               *
+   *   Safari: 7.1+              *
+   *   Firefox: 35+              *
+   *   Opera: none               *
+   *   IE: none                  *
+   *   Android: none             *
+   *   iOS: 8.1+                 *
+   *                             *
+   ******************************/ 
+     
+   .mul11 {
+      width: 60px;
+      height: 60px;
+      position: relative;
+   }
+      
+   .mul11s {
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      opacity: .75;
+      mix-blend-mode: multiply;
+   }
+      
+   .mul11s1 {
+      top: 0;
+      left: 15px;
+      background-color: #52B3D9;
+      -webkit-animation: mul11Spin 12s infinite steps(8);
+      animation: mul11Spin 12s infinite steps(8);
+   }
+      
+   .mul11s2 {
+      top: 15px;
+      left: 0;
+      background-color: #F5D76E;
+      -webkit-animation: mul11Spin 12s infinite steps(8);
+      animation: mul11Spin 12s infinite steps(8);
+   }
+      
+   .mul11s3 {
+      top: 15px;
+      left: 30px;
+      background-color: #F2784B;
+      -webkit-animation: mul11Spin 12s infinite steps(8);
+      animation: mul11Spin 12s infinite steps(8);
+   }   
+   
+   .mul11s4 {
+      top: 30px;
+      left: 15px;
+      background-color: #68C3A3;
+      -webkit-animation: mul11Spin 12s infinite steps(8);
+      animation: mul11Spin 12s infinite steps(8);
+   } 
+     
+   @-webkit-keyframes mul11Spin {
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   }   
+   @keyframes mul11Spin {
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   }
+</xmp>
