@@ -1,0 +1,51 @@
+<xmp>
+   .single12 {
+      height: 50px;
+      width: 50px;
+      background-color: pink;
+      -webkit-animation: single12anim 2s infinite linear, single12colors 10s infinite linear;
+      animation: single12anim 2s infinite linear, single12colors 10s infinite linear;
+   }
+      
+   @-webkit-keyframes single12anim {
+      0%, 40%, 100% {
+         border-radius: 5%;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+      20% {
+         border-radius: 50%;
+         -webkit-transform: scale(.8);
+         transform: scale(.8);
+      }
+   } 
+     
+   @keyframes single12anim {
+      0%, 40%, 100% {
+         border-radius: 5%;
+         -webkit-transform: scale(1);
+         transform: scale(1);
+      }
+      20% {
+         border-radius: 50%;
+         -webkit-transform: scale(.8);
+         transform: scale(.8);
+      }
+   } 
+     
+   @-webkit-keyframes single12colors {
+      0%, 88%, 100% { background-color: #D24D57; }
+      8%, 20% { background-color: #3498DB; }
+      28%, 40% { background-color: #F7CA18; }
+      48%, 60% { background-color: #1BBC9B; }
+      68%, 80% { background-color: #913D88; }
+   } 
+     
+   @keyframes single12colors {
+      0%, 88%, 100% { background-color: #D24D57; }
+      8%, 20% { background-color: #3498DB; }
+      28%, 40% { background-color: #F7CA18; }
+      48%, 60% { background-color: #1BBC9B; }
+      68%, 80% { background-color: #913D88; }
+   }
+</xmp>
