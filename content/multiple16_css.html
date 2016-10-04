@@ -1,0 +1,100 @@
+<xmp>
+   .mul16 {
+      height: 100px;
+      width: 100px;
+      -webkit-animation: mul16turn 2s infinite linear;
+      animation: mul16turn 2s infinite linear;
+   } 
+     
+   @-webkit-keyframes mul16turn {
+      0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+      }
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   }
+      
+   @keyframes mul16turn {
+      0% {
+         -webkit-transform: rotate(0deg);
+         transform: rotate(0deg);
+      }
+      100% {
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+      }
+   }
+      
+   .m16c {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: red;
+      float: left;
+      margin: 30px 3px 0;
+   } 
+     
+   .m16c1 {
+      -webkit-animation: m16c1anim 3s infinite ease-in-out;
+      animation: m16c1anim 3s infinite ease-in-out;
+   }
+      
+   .m16c2 {
+      -webkit-animation: m16c2anim 3s infinite ease-in-out;
+      animation: m16c2anim 3s infinite ease-in-out;
+   }
+      
+   @-webkit-keyframes m16c1anim {
+      0%, 100% {
+         -webkit-transform: scale(.25);
+         transform: scale(.25);
+         background-color: #67b4d4;
+      }
+      50% {
+         -webkit-transform: scale(1.5);
+         transform: scale(1.5);
+         background-color: #4b7b9f;
+      }
+   } 
+     
+   @keyframes m16c1anim {
+      0%, 100% {
+         -webkit-transform: scale(.25);
+         transform: scale(.25);
+         background-color: #67b4d4;
+      }
+      50% {
+         -webkit-transform: scale(1.5);
+         transform: scale(1.5);
+         background-color: #4b7b9f;
+      }
+   }
+      
+   @-webkit-keyframes m16c2anim {
+      0%, 100% {
+         -webkit-transform: scale(1.5);
+         transform: scale(1.5);
+         background-color: #4b7b9f;
+      }
+      50% {
+         -webkit-transform: scale(.25);
+         transform: scale(.25);
+         background-color: #67b4d4;
+      }
+   }   
+   @keyframes m16c2anim {
+      0%, 100% {
+         -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+         background-color: #4b7b9f;
+      }
+      50% {
+         -webkit-transform: scale(.25);
+         transform: scale(.25);
+         background-color: #67b4d4;
+      }
+   }
+</xmp>
